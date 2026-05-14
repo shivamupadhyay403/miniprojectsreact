@@ -14,7 +14,7 @@ const useFetch = (api, query = "") => {
     try {
       const data = await fetch(url);
       const responseData = await data.json();
-      setData(responseData?.data ?? []);
+      setData(responseData ?? []);
     } catch (err) {
       setError(err.response);
     } finally {

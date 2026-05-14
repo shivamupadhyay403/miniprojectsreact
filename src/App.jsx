@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import DataTable from "./components/DataTable";
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  return <DataTable />;
+};
 
-export default App
+export default App;
